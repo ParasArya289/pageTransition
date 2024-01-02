@@ -1,16 +1,14 @@
-import "./Home.css";
-import { useNavigate } from "react-router-dom";
+import "./Page.css";
 import { Navbar } from "../Components/Navbar";
 import { Inter } from "../Components/Inter";
-export default Home = () => {
-  const navigate = useNavigate();
-
+import { SwitchTransition } from "../Components/SwitchTransition";
+export default Home = ({ transition }) => {
   return (
-    <Inter>
-      <div className="demo">
+    <SwitchTransition transition={transition}>
+      <div className="page">
         <Navbar />
         <h1>Home Page</h1>
       </div>
-    </Inter>
+    </SwitchTransition>
   );
 };

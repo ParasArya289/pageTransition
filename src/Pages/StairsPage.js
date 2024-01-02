@@ -1,12 +1,13 @@
 import { Navbar } from "../Components/Navbar";
 import { Stairs } from "../Components/Stairs";
-export const StairsPage = () => {
+import { SwitchTransition } from "../Components/SwitchTransition";
+export const StairsPage = ({ transition }) => {
   return (
-    <Stairs>
+    <SwitchTransition transition={transition}>
       <Navbar />
-      <div className="demo">
+      <div className="page">
         <h1>Stairs Page</h1>
       </div>
-    </Stairs>
+    </SwitchTransition>
   );
 };

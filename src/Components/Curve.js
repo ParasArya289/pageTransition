@@ -147,7 +147,6 @@ export const Curve = ({ children, backgroundColor }) => {
         style={{ opacity: dimensions.width == null ? 1 : 0 }}
         className="background"
       />
-
       <motion.p className="route" {...anim(text)}>
         {routes[location.pathname]}
       </motion.p>

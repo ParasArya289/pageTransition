@@ -1,12 +1,13 @@
 import { Curve } from "../Components/Curve";
 import { Navbar } from "../Components/Navbar";
-export const SvgPage = () => {
+import { SwitchTransition } from "../Components/SwitchTransition";
+export const SvgPage = ({ transition }) => {
   return (
-    <Curve>
+    <SwitchTransition transition={transition}>
       <Navbar />
-      <div className="demo">
+      <div className="page">
         <h1>SVG Page</h1>
       </div>
-    </Curve>
+    </SwitchTransition>
   );
 };

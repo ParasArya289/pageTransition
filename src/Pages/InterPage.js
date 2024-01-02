@@ -1,12 +1,13 @@
 import { Inter } from "../Components/Inter";
 import { Navbar } from "../Components/Navbar";
-export const InterPage = () => {
+import { SwitchTransition } from "../Components/SwitchTransition";
+export const InterPage = ({ transition }) => {
   return (
-    <Inter>
+    <SwitchTransition transition={transition}>
       <Navbar />
-      <div className="demo">
+      <div className="page">
         <h1>Inter Page</h1>
       </div>
-    </Inter>
+    </SwitchTransition>
   );
 };
