@@ -1,0 +1,27 @@
+.cardPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .show-card {
+    /* position: relative; */
+
+    background-color: #435a9f;
+    width: 280px;
+    height: 380px;
+    cursor: pointer;
+    img {
+      /* position: absolute;
+      bottom: 0;
+      left: 0; */
+      width: 100%;
+      object-fit: cover;
+    }
+    .show-card-container {
+      margin: auto;
+      color: white;
+      text-align: left;
+      max-width: 600px;
+      padding: 20px;
+    }
+  }
+}
